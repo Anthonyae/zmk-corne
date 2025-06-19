@@ -18,29 +18,6 @@
 
 // DEFINE BEHAVIORS FOR HOME ROW MODS. AND THEN COPY THESE SETTIGNS TO THE HOMEROW MODS LABELED DEFAULT AND THE (1 - 4)
 
-        // home row mods - urob
-        hm_urob_l: hm_urob_l {   
-                compatible = "zmk,behavior-hold-tap";
-                #binding-cells = <2>;
-                tapping-term-ms = <280>;
-                require-prior-idle-ms = <100>;
-                quick-tap-ms = <175>;
-                flavor = "balanced"; // will trigger the hold behavior when the tapping-term-ms has expired or another key is pressed and released.
-                bindings = <&kp>, <&kp>;
-                hold-trigger-key-positions = <KEYS_R THUMBS>; 
-                hold-trigger-on-release; 
-        };
-        hm_urob_r: hm_urob_r {   
-                compatible = "zmk,behavior-hold-tap";
-                #binding-cells = <2>;
-                tapping-term-ms = <280>;
-                require-prior-idle-ms = <100>;
-                quick-tap-ms = <175>;
-                flavor = "balanced";
-                bindings = <&kp>, <&kp>;
-                hold-trigger-key-positions = <KEYS_L THUMBS>;
-                hold-trigger-on-release;
-        };
 
         // Positional Homerow mods for shift
         // Use faster tapping term and disable some features that may
